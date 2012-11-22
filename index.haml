@@ -1,0 +1,56 @@
+!!! 5
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+%head
+  %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+  %meta(charset="utf-8")
+  %title Design Orlando
+  %link(href="favicon.ico" rel="shortcut icon" type="image/x-icon")
+  %link(href="assets/css/application.css" rel="stylesheet")
+%body.site.site-home
+
+  / Header
+
+  %header.site-header.row
+    .cell
+      .logo
+        <a href="#"><image src="assets/images/logo.png" alt="Design Orlando" /></a>
+      .headline
+        %h1 <i>Meet.</i> Learn. <b>DO.</b>
+        %h3 Downtown Orlando. <i>Every month.</i>
+
+  / Talks
+
+  .talks.cell
+    %h2 Our Talks
+    %ol
+      %li.talk.is-upcoming
+        %p.label Next Talk
+        .poster
+          %span 12.12
+        .details
+          %p The next talk will be on <strong>December 11th, 2012</strong>. The speaker has not been selected yet.
+
+      %li.talk
+        .poster
+          %span 11.12
+        .details
+          %h4.title <a href="http://www.meetup.com/Design-Orlando/events/89222462/">Designing With a Narrative in Mind</a>
+          %h5 by Justin Mezzell
+
+        %a.btn-a(href="https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell") View Slides
+
+      %li.talk
+        .poster
+          %span 10.12
+        .details
+          %h4.title <a href="http://www.meetup.com/Design-Orlando/events/85466962/">Bridging Design Gaps with Sass + Compass</a>
+          %h5 by Nick Walsh
+
+        %a.btn-a(href="https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass") View Slides
+
+  %script(src="assets/javascripts/jquery.js")
+  %script(src="assets/javascripts/application.js")

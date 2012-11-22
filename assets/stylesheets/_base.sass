@@ -1,0 +1,102 @@
+//-------------------------------------
+//  Base
+//-------------------------------------
+
++establish-baseline
+
+html
+  background: $color-body
+  // background-image: url(http://basehold.it/i/24)
+body
+  color: lighten(desaturate($color-base, 20%), 20%)
+  font-family: $font-base
+
+// ----- Block Content ----- //
+
+// Headings
+
+h1, h2, h3,
+h4, h5, h6
+  color: $color-base
+  font-family: $font-base
+
+h1
+  +adjust-font-size-to(80px, 3.5)
+  color: #FFF
+  font-family: $font-alt
+  text-transform: uppercase
+  b
+    color: $color-highlight
+
+h2
+  +adjust-font-size-to(40px)
+  +trailer(0.8)
+  font-family: $font-alt
+  text-transform: uppercase
+
+h3
+  +adjust-font-size-to(34px)
+  color: $color-highlight
+
+h4
+  +adjust-font-size-to(22px, 1.2)
+  font-family: $font-header
+
+h5
+  +trailer(0.2)
+  +adjust-font-size-to(14px)
+  color: lighten(desaturate($color-base, 60%), 40%)
+  font-family: $font-base
+
+h6
+
+// Paragraphs
+
+p
+  +adjust-leading-to(1)
+
+// ----- Inline Content ----- //
+
+// Links
+
+a
+  color: $color-highlight
+  text-decoration: none
+  &:hover,
+  &:focus
+    color: darken($color-highlight, 15%)
+
+// Formatting
+
+strong
+  font-family: $font-header
+
+// ----- Base Containers ----- //
+
+.row
+  background: $color-base
+
+.cell
+  @extend %group
+  +padding-leader(1)
+  +padding-trailer(1)
+  margin: 0 auto
+  max-width: 1000px
+  padding-left: $base-line-height
+  padding-right: $base-line-height
+  +respond-to(600px)
+    +padding-leader(2)
+    +padding-trailer(2)
+  +respond-to(900px)
+    +padding-leader(2.5)
+    +padding-trailer(2.5)
+
+
+.grid
+
+  .box
+
+.card
+  background: #FFF
+
+.bucket
