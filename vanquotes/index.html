@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+  <meta charset='utf-8'>
+  <title>Jason VanQuotes</title>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:900' rel='stylesheet'>
+  <link href='assets/css/application.css' rel='stylesheet'>
+</head>
+<body>
+  <ul>
+    <li>"That's not gonna happen."</li>
+    <li>"Is that a hill worth dying on?"</li>
+    <li>"Over the radar."</li>
+    <li>"From a design-standpoint..."</li>
+    <li>"It is what it is."</li>
+    <li>"Leverage, synergy."</li>
+    <li>"There's two sides to the equation."</li>
+    <li>"The other side of the equation."</li>
+    <li>"The numbers are fuzzy."</li>
+    <li>"Jazz that up a bit."</li>
+    <li>"That's low on the priority pole."</li>
+  </ul>
+  <script src='assets/javascripts/jquery.js'></script>
+  <script>
+    //<![CDATA[
+      $(function() {
+        function showQuote() {
+          var number = Math.floor(Math.random() * $('ul li').length);
+          $('ul li').hide();
+          $('ul li:eq('+ number +')').show();
+        }
+        window.setInterval(showQuote, 4000);
+        showQuote();
+      });
+    //]]>
+  </script>
+</body>
