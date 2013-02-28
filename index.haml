@@ -6,73 +6,76 @@
   %meta(content="width=device-width, initial-scale=1.0" name="viewport")
   %title Design Orlando
   %link(href="favicon.ico" rel="shortcut icon" type="image/x-icon")
-  %link(href="assets/css/application.css" rel="stylesheet")
+  %link(href="assets/stylesheets/application.css" rel="stylesheet")
 %body.site.site-home
 
   / Header
 
-  %header.site-header.row
+  %header.row--a.siteHeader
     .cell
       .logo
         <a href="/"><img src="assets/images/logo.png" alt="Design Orlando" /></a>
       .headline
         %h1 <i>Meet.</i> Learn. <b>DO.</b>
         %h3 Downtown Orlando. <i>Every month.</i>
+      %a.btn--b.btn--iblock{:href => "http://twitter.com/designorlandofl"} Follow us on Twitter
 
   / Talks
 
-  .talks.cell
-    %h2 Our Talks
-    %ol
-      %li.talk.is-upcoming
-        %p.label Next Talk
-        .poster
-          %span 03.12.13
-        .details
-          %p The topic and speaker have not been selected for the next talk.
+  .row.talks
+    .cell
+      %h2 Our Talks
 
-      %li.talk
-        .poster
-          %span 02.12.13
-        .details
-          %h4.title <a href="http://www.meetup.com/Design-Orlando/events/102557212/">Design Discussion: Mastering Your Craft</a>
-          %h5 by Bill Columbia
+      %ol
+        %li.talk.is-upcoming
+          %p.talk-label Next Talk
+          .talk-poster
+            %span 03.12.13
+          .talk-details
+            %p The topic and speaker have not been selected for the next talk.
 
-        %a.btn-a(href="https://speakerdeck.com/designorlando/craftsmanship") View Slides
+        %li.talk
+          .talk-poster
+            %span 02.12.13
+          .talk-details
+            %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/102557212/">Design Discussion: Mastering Your Craft</a>
+            %h5 by Bill Columbia
 
-      %li.talk
-        .poster
-          %span 01.08.13
-        .details
-          %h4.title <a href="http://www.meetup.com/Design-Orlando/events/97508142">Design Discussion</a>
-          %h5 by Jason VanLue
+          %a.btn--a(href="https://speakerdeck.com/designorlando/craftsmanship") View Slides
 
-        %a.btn-a(href="https://speakerdeck.com/designorlando/7-in-7") View Slides
+        %li.talk
+          .talk-poster
+            %span 01.08.13
+          .talk-details
+            %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/97508142">Design Discussion</a>
+            %h5 by Jason VanLue
 
-      %li.talk.is-upcoming
-        .poster
-          %span 12.11.12
-        .details
-          %h4.title <a href="http://www.meetup.com/Design-Orlando/events/89224162/">DO Grok</a>
-          %p Come prepared to bring up a topic, weigh in on some issues, or to just listen to some good discussion.
+          %a.btn--a(href="https://speakerdeck.com/designorlando/7-in-7") View Slides
 
-      %li.talk
-        .poster
-          %span 11.13.12
-        .details
-          %h4.title <a href="http://www.meetup.com/design-orlando/events/89222462/">Designing With a Narrative in Mind</a>
-          %h5 by Justin Mezzell
+        %li.talk.is-upcoming
+          .talk-poster
+            %span 12.11.12
+          .talk-details
+            %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/89224162/">DO Grok</a>
+            %p Come prepared to bring up a topic, weigh in on some issues, or to just listen to some good discussion.
 
-        %a.btn-a(href="https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell") View Slides
+        %li.talk
+          .talk-poster
+            %span 11.13.12
+          .talk-details
+            %h4.talk-title <a href="http://www.meetup.com/design-orlando/events/89222462/">Designing With a Narrative in Mind</a>
+            %h5 by Justin Mezzell
 
-      %li.talk
-        .poster
-          %span 10.09.12
-        .details
-          %h4.title <a href="http://www.meetup.com/Design-Orlando/events/85466962/">Bridging Design Gaps with Sass + Compass</a>
-          %h5 by Nick Walsh
+          %a.btn--a(href="https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell") View Slides
 
-        %a.btn-a(href="https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass") View Slides
+        %li.talk
+          .talk-poster
+            %span 10.09.12
+          .talk-details
+            %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/85466962/">Bridging Design Gaps with Sass + Compass</a>
+            %h5 by Nick Walsh
+
+          %a.btn--a(href="https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass") View Slides
 
   :javascript
     var _gaq = _gaq || [];

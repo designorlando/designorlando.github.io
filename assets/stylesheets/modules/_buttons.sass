@@ -1,0 +1,37 @@
+//-------------------------------------
+//  Buttons
+//-------------------------------------
+
+// ----- Base Button ----- //
+
+%btn
+  +transition(background 0.2s ease-in-out)
+  +padding-leader(0.5)
+  +padding-trailer(0.5)
+  display: block
+  padding-left: $base-line-height * 2
+  padding-right: $base-line-height * 2
+  text-align: center
+
+// ----- Button Modifiers ----- //
+
+.btn--iblock
+  display: inline-block
+
+.btn--a
+  @extend %btn
+  background: lighten(desaturate($color-base, 50%), 50%)
+  color: #FFF
+  &:hover,
+  &:focus
+    background: $color-highlight
+    color: #FFF
+
+.btn--b
+  @extend %btn
+  background: rgba(#FFF, 0.2)
+  color: #FFF
+  &:hover,
+  &:focus
+    background: $color-highlight
+    color: #FFF

@@ -1,0 +1,34 @@
+//-------------------------------------
+//  Containers
+//-------------------------------------
+
+// ----- Rows ----- //
+
+%row, .row
+  +trailer(1)
+  background: none
+
+.row--a
+  @extend %row
+  background: $color-base
+
+// ----- Cells ----- //
+
+.cell
+  @extend %group
+  margin: 0 auto
+  max-width: 1000px
+  padding-left: $base-line-height
+  padding-right: $base-line-height
+  position: relative
+  +respond-to(600px)
+    +padding-leader(2)
+    +padding-trailer(2)
+  +respond-to(900px)
+    +padding-leader(2.5)
+    +padding-trailer(2.5)
+
+// ----- Cards ----- //
+
+.card
+  background: #FFF
