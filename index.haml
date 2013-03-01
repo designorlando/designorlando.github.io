@@ -18,7 +18,6 @@
       .headline
         %h1 <i>Meet.</i> Learn. <b>DO.</b>
         %h3 Downtown Orlando. <i>Every month.</i>
-      %a.btn--b.btn--iblock{:href => "http://twitter.com/designorlandofl"} Follow us on Twitter
 
   / Talks
 
@@ -27,55 +26,58 @@
       %h2 Our Talks
 
       %ol
-        %li.talk.is-upcoming
+        %li.card.talk.is-upcoming
           %p.talk-label Next Talk
           .talk-poster
             %span 03.12.13
           .talk-details
-            %p The topic and speaker have not been selected for the next talk.
+            %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/106909682/">Your Money &amp; Your Life?</a>
+            %h5 by Carl Smith
 
-        %li.talk
+          %a.btn--a.talk-slides(href="https://speakerdeck.com/designorlando/craftsmanship") View Slides
+
+        %li.card.talk
           .talk-poster
             %span 02.12.13
           .talk-details
             %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/102557212/">Design Discussion: Mastering Your Craft</a>
             %h5 by Bill Columbia
 
-          %a.btn--a(href="https://speakerdeck.com/designorlando/craftsmanship") View Slides
+          %a.btn--a.talk-slides(href="https://speakerdeck.com/designorlando/craftsmanship") View Slides
 
-        %li.talk
+        %li.card.talk
           .talk-poster
             %span 01.08.13
           .talk-details
             %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/97508142">Design Discussion</a>
             %h5 by Jason VanLue
 
-          %a.btn--a(href="https://speakerdeck.com/designorlando/7-in-7") View Slides
+          %a.btn--a.talk-slides(href="https://speakerdeck.com/designorlando/7-in-7") View Slides
 
-        %li.talk.is-upcoming
+        %li.card.talk
           .talk-poster
             %span 12.11.12
           .talk-details
             %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/89224162/">DO Grok</a>
             %p Come prepared to bring up a topic, weigh in on some issues, or to just listen to some good discussion.
 
-        %li.talk
+        %li.card.talk
           .talk-poster
             %span 11.13.12
           .talk-details
             %h4.talk-title <a href="http://www.meetup.com/design-orlando/events/89222462/">Designing With a Narrative in Mind</a>
             %h5 by Justin Mezzell
 
-          %a.btn--a(href="https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell") View Slides
+          %a.btn--a.talk-slides(href="https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell") View Slides
 
-        %li.talk
+        %li.card.talk
           .talk-poster
             %span 10.09.12
           .talk-details
             %h4.talk-title <a href="http://www.meetup.com/Design-Orlando/events/85466962/">Bridging Design Gaps with Sass + Compass</a>
             %h5 by Nick Walsh
 
-          %a.btn--a(href="https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass") View Slides
+          %a.btn--a.talk-slides(href="https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass") View Slides
 
   :javascript
     var _gaq = _gaq || [];

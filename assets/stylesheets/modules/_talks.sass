@@ -10,7 +10,6 @@
 .talk
   +box-sizing(border-box)
   +trailer(1.2)
-  background: #FFF
   display: block
   min-height: 350px
   position: relative
@@ -28,29 +27,6 @@
     &:nth-child(3n)
       margin: 0
 
-  // Talk Button
-
-  .btn--a
-    +box-sizing(border-box)
-    bottom: 0
-    left: 0
-    position: absolute
-    width: 100%
-
-// ----- Talk Label ----- //
-
-.talk-label
-  +padding-leader(0.1)
-  +padding-trailer(0.1)
-  background: $color-highlight
-  color: #FFF
-  left: -10px
-  padding-left: 1em
-  padding-right: 1em
-  position: absolute
-  top: -15px
-  z-index: 1
-
 // ----- Talk Poster ----- //
 
 .talk-poster
@@ -66,9 +42,34 @@
     display: inline-block
     font-family: $font-alt
 
+// ----- Talk Label ----- //
+
+.talk-label
+  +padding-leader(0.1)
+  +padding-trailer(0.1)
+  background: $color-highlight
+  color: #FFF
+  left: -10px
+  padding-left: 1em
+  padding-right: 1em
+  position: absolute
+  top: -15px
+  z-index: 1
+
 // ----- Talk Details ----- //
 
 .talk-details
   +padding-leader(0.5)
   padding-left: 1em
   padding-right: 1em
+  a
+    +transition(color 0.3s ease-in-out)
+
+// ----- Talk Slids Button ----- //
+
+.talk-slides
+  +box-sizing(border-box)
+  bottom: 0
+  left: 0
+  position: absolute
+  width: 100%

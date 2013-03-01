@@ -26,50 +26,39 @@
 .siteHeader
   @extend %group
 
-  // Logo
+// ----- Logo ----- //
 
-  .logo
-    display: none
-    float: left
-    margin-right: 10%
-    width: 15%
-
-  // Headline
-
-  .headline
-    text-align: center
-    h3
-      +adjust-font-size-to(28px)
-    i
-      display: block
-
-  // Follow Button
-
-  .btn--b
-    position: absolute
-    right: $base-line-height
-    top: 0
-
+.logo
+  display: none
+  float: left
+  margin-right: 10%
+  width: 15%
   +respond-to(900px)
-    .logo
-      display: block
-    .headline
-      +leader(2)
-      float: left
-      text-align: left
-      width: 75%
-      h1
-        +adjust-font-size-to(70px, 2.8)
-      h3
-        +adjust-font-size-to(34px)
-      i
-        display: inline
+    display: block
 
+// ----- Headline ----- //
+
+.headline
+  text-align: center
+  h3
+    +adjust-font-size-to(28px)
+  i
+    display: block
+  +respond-to(900px)
+    +leader(2)
+    float: left
+    text-align: left
+    width: 75%
+    h1
+      +adjust-font-size-to(70px, 2.8)
+    h3
+      +adjust-font-size-to(34px)
+    i
+      display: inline
   +respond-to(1005px)
-    .headline
-      +leader(1.3)
-      h1
-        +adjust-font-size-to(80px, 3.5)
+    +leader(1.3)
+    h1
+      +adjust-font-size-to(80px, 3.5)
 
 //-------------------------------------
 //  Inbox

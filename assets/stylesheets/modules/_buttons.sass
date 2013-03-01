@@ -8,15 +8,24 @@
   +transition(background 0.2s ease-in-out)
   +padding-leader(0.5)
   +padding-trailer(0.5)
-  display: block
+  display: inline-block
   padding-left: $base-line-height * 2
   padding-right: $base-line-height * 2
   text-align: center
 
 // ----- Button Modifiers ----- //
 
-.btn--iblock
-  display: inline-block
+// Block Button
+
+.btn--block
+  display: block
+
+// Large Button
+
+.btn--large
+  +adjust-font-size-to(18px)
+
+// Primary Button
 
 .btn--a
   @extend %btn
@@ -27,11 +36,13 @@
     background: $color-highlight
     color: #FFF
 
+// Secondary Button
+
 .btn--b
   @extend %btn
-  background: rgba(#FFF, 0.2)
+  background: $color-base
   color: #FFF
   &:hover,
   &:focus
-    background: $color-highlight
+    background: lighten($color-base, 5%)
     color: #FFF

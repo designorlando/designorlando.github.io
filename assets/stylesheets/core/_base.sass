@@ -63,26 +63,3 @@ a
 
 strong
   font-family: $font-header
-
-// ----- Base Containers ----- //
-
-.row
-  background: $color-base
-
-.cell
-  @extend %group
-  +padding-leader(1)
-  +padding-trailer(1)
-  margin: 0 auto
-  max-width: 1000px
-  padding-left: $base-line-height
-  padding-right: $base-line-height
-  +respond-to(600px)
-    +padding-leader(2)
-    +padding-trailer(2)
-  +respond-to(900px)
-    +padding-leader(2.5)
-    +padding-trailer(2.5)
-
-.card
-  background: #FFF
