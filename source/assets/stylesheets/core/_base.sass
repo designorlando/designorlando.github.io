@@ -1,0 +1,49 @@
+//-------------------------------------
+//  Base
+//-------------------------------------
+
+html
+  font-size: $base-fontSize
+  height: 100%
+
+body
+  +transition(background-color 0.4s ease-out)
+  background: $base-background
+  color: $base-color
+  font-family: $base-fontFamily
+  font-size: 100%
+  line-height: $base-lineHeight
+  padding-bottom: rem($base-whitespace * 4)
+
+// ----- Block Content ----- //
+
+p
+  font-size: rem($base-fontSize)
+  margin: 0 0 rem($base-whitespace)
+
+ol, ul
+  margin: 0
+  padding: 0
+ol li,
+ul li
+  list-style-type: none
+
+// ----- Inline Content ----- //
+
+a
+  +transition(all 0.2s ease-in-out)
+  border-bottom: $base-border
+  color: $base-link-color
+  text-decoration: none
+  &:hover,
+  &:focus
+    background: #fff
+    border-color: $base-borderColor
+    color: $base-color
+
+b, i
+  font-style: normal
+
+img
+  height: auto
+  min-width: 100%

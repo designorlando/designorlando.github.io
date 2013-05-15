@@ -1,0 +1,28 @@
+//-------------------------------------
+//  Colors
+//-------------------------------------
+
+.colors
+  @extend %group
+  +box-sizing(border-box)
+  border: $base-border
+  border-left: 0
+  border-right: 0
+  width: 100%
+
+  @for $i from 1 through 8
+    &.colors--#{$i} li
+      width: (100 / $i) + 1% - 1
+
+  li
+    +box-sizing(border-box)
+    border-right: $base-border
+    float: left
+    height: 100%
+    &:last-child
+      border: 0
+    a
+      border: 0
+      display: block
+      text-indent: -9999rem
+

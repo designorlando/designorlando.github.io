@@ -1,0 +1,44 @@
+!!! 5
+%html(lang="en")
+  %head
+    %meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
+    %meta(charset="utf-8")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    %title= (title = data.page.title) ? "#{title} - Design Orlando" : 'Design Orlando'
+    %meta(name="description" content="")
+
+    = stylesheet_link_tag 'application'
+
+    = partial 'shared/google_analytics' if build?
+
+  %body{ class: page_classes }
+
+    %ul.colors.colors--8
+      %li <a href="#16a085">#16a085</a>
+      %li <a href="#27ae60">#27ae60</a>
+      %li <a href="#2980b9">#2980b9</a>
+      %li <a href="#7f8c8d">#7f8c8d</a>
+      %li <a href="#F66347">#F66347</a>
+      %li <a href="#596a7b">#596a7b</a>
+      %li <a href="#ac77c3">#ac77c3</a>
+      %li <a href="#c75649">#c75649</a>
+
+    %header.l-row--a
+      .l-cell
+        .l-logo
+          %a(href="#")
+            %img(src="assets/images/logo-dark.png" alt="Design Orlando" class="flag-media-obj" height="187" width="181")
+        .c-masthead
+          %h1 <i>Meet.</i> Learn. <b>DO.</b>
+          %h3 Downtown Orlando. <i>Every month.</i>
+          %a(href="http://twitter.com/designorlandofl") Follow us on Twitter &rarr;
+
+    .l-cell= yield
+
+    = partial 'shared/gauges' if build?
+
+    = javascript_include_tag 'http://code.jquery.com/jquery-1.9.1.min.js'
+    = javascript_include_tag 'application.js'
+    :coffeescript
+      $ -> ColorSelector()

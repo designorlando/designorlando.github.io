@@ -1,0 +1,44 @@
+//-------------------------------------
+//  Talk
+//-------------------------------------
+
+// ----- Base Talk ----- //
+
+.talk
+  margin-bottom: rem($base-whitespace)
+  padding-bottom: rem($base-whitespace * 4)
+  padding-top: rem($base-whitespace * 4)
+  text-align: center
+
+  // States
+
+  &.is-upcoming
+    margin-bottom: rem($base-whitespace * 4)
+    p
+      font-size: rem(20px)
+
+// ----- Talk Label ----- //
+
+.talk-date
+  border-bottom: $base-border
+  border-right: $base-border
+  display: inline-block
+  font-size: rem($base-fontSize)
+  left: 4px
+  padding: rem(5px) rem($base-whitespace)
+  position: absolute
+  top: 4px
+
+// ----- Talk Title ----- //
+
+.talk-title
+  margin-bottom: rem($base-whitespace / 2)
+
+// ----- Talk Number ----- //
+
+.talk-num
+  bottom: 0
+  font-family: $c-alt-fontFamily
+  font-size: rem(40px)
+  position: absolute
+  right: 15px

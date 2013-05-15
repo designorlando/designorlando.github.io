@@ -1,0 +1,18 @@
+//-------------------------------------
+//  Button
+//-------------------------------------
+
+// ----- Base Button ----- //
+
+.btn
+  +transition(background 0.2s ease-in-out)
+  border-radius: 0 $base-borderRadius $base-borderRadius $base-borderRadius
+  border: $base-border
+  display: inline-block
+  padding: rem($base-whitespace / 2) rem($base-whitespace * 2)
+  text-align: center
+  &:hover,
+  &:focus
+    background: #fff
+    color: $base-color
+    text-decoration: none
