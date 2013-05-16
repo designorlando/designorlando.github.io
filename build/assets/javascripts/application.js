@@ -1,0 +1,1 @@
+(function(){var e;e=function(){return $(".colors a").each(function(){var e,t;return t=$(this),e=t.attr("href"),t.css("background-color",e),t.on("click",function(e){return e.preventDefault(),$("body").css("background-color",$(this).attr("href"))})})},window.ColorSelector=e}).call(this);
