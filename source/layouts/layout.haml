@@ -42,6 +42,6 @@
 
     = javascript_include_tag 'http://code.jquery.com/jquery-1.9.1.min.js'
     = javascript_include_tag 'vendor/jquery.cookie.js'
-    = javascript_include_tag 'application.js'
+    = javascript_include_tag 'colorer'
     :coffeescript
-      $ -> ColorSelector()
+      $ -> $('.colors a').colorer()
