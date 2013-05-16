@@ -15,7 +15,7 @@ body
   line-height: $base-lineHeight
   padding-bottom: rem($base-whitespace * 4)
 
-  @for $i from 1 through $base-colors-total
+  @for $i from 1 through $colors-total
     &.color--#{$i}
       background-color: color-for($i)
 
