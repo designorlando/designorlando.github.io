@@ -8,9 +8,11 @@
   border-bottom: $base-border
   width: 100%
 
-  @for $i from 1 through 8
+  @for $i from 1 through $base-colors-total
     &.colors--#{$i} li
       width: (100 / $i) + 1% - 1
+    .color--#{$i}
+      background: color-for($i)
 
   li
     +box-sizing(border-box)
@@ -23,4 +25,5 @@
       border: 0
       display: block
       text-indent: -9999rem
+
 
