@@ -14,7 +14,7 @@ h1, .c-h1, %c-h1
   font-size: rem(50px)
   margin-top: rem($base-whitespace)
 
-  +respond-to(1024px)
+  +respond-to($l-breakpoint--b)
     font-size: rem(70px)
     margin-top: 0
 
@@ -25,7 +25,7 @@ h2, .c-h2, %c-h2
 h3, .c-h3, %c-h3
   font-size: rem(20px)
 
-  +respond-to(800px)
+  +respond-to($l-breakpoint--a)
     font-size: rem(28px)
 
 h4, .c-h4, %c-h4
@@ -62,7 +62,7 @@ h5, .c-h5, %c-h5
     font-family: $base-fontFamily
     margin-top: rem(-$base-whitespace * 2)
 
-  +respond-to(800px)
+  +respond-to($l-breakpoint--a)
     float: right
     width: 70%
     h1, h3
