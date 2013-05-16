@@ -61,6 +61,16 @@
 
 .l-logo
   margin: 0 auto rem($base-whitespace)
+  svg
+    fill: rgba(#000, 0.7)
+  a
+    border: 0
+    display: block
+  a:hover
+    background: none
+    svg
+      fill: rgba(#fff, 0.4)
+
 
   +respond-to(800px)
     float: left
