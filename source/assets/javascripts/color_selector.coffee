@@ -5,9 +5,8 @@ class ColorSelector
     @setupColors()
 
   getOrSetCookie: ->
-    background_color = $.cookie('background_color') || ''
-    color_num = $.cookie('color_num') || ''
-    @setBackgroundColor(color_num) if background_color && color_num
+    color_num = $.cookie('color_num')
+    @setBackgroundColor(color_num) if color_num?
 
   setBackgroundColor: (color_num) ->
     $('body').removeClass().addClass("color--#{color_num}")
@@ -26,7 +25,6 @@ class ColorSelector
 
         that.setBackgroundColor(x)
 
-        $.cookie('background_color', color, { expires: 7 })
         $.cookie('color_num', x, { expires: 7 })
 
 window.ColorSelector = ColorSelector
