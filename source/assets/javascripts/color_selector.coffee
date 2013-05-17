@@ -1,7 +1,7 @@
 class ColorSelector
-  constructor: (colors, save = true) ->
+  constructor: (colors) ->
     @colors = $(colors)
-    @getOrSetCookie() if save?
+    @getOrSetCookie()
     @setupColors()
 
   getOrSetCookie: ->
