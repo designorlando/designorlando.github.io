@@ -54,15 +54,23 @@ h5, .c-h5, %c-h5
 // ----- Masthead ----- //
 
 .c-masthead
-  h1, h3
+  .c-tagline, p
     display: none
 
-  h3
+  p
+    @extend %c-h3
     font-family: $base-fontFamily
     margin-top: rem(-$base-whitespace * 2)
+  .c-tagline
+    @extend %c-h1
+    font-family: $c-header-fontFamily
+    font-size: rem(50px)
+    +respond-to($l-breakpoint--b)
+      font-size: rem(70px)
+      margin-top: 0
 
   +respond-to($l-breakpoint--a)
     float: right
     width: 70%
-    h1, h3
+    .c-tagline, p
       display: block

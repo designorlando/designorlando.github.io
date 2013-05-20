@@ -16,6 +16,8 @@
     margin-bottom: rem($base-whitespace * 4)
     p
       font-size: rem(20px)
+    .talk-date
+      font-size: rem($base-fontSize)
 
 // ----- Talk Label ----- //
 
@@ -23,6 +25,7 @@
   border-bottom: $base-border
   border-right: $base-border
   display: inline-block
+  font-family: $c-header-fontFamily
   font-size: rem($base-fontSize)
   left: 4px
   padding: rem(5px) rem($base-whitespace)
@@ -32,7 +35,14 @@
 // ----- Talk Title ----- //
 
 .talk-title
-  margin-bottom: rem($base-whitespace / 2)
+  @extend %c-h3
+  margin: 0 0 rem($base-whitespace / 2)
+  text-transform: none
+
+// ----- Talk Author ----- //
+
+.talk-author
+  font-size: rem(18px)
 
 // ----- Talk Number ----- //
 
