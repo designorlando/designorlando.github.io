@@ -10,20 +10,20 @@
   padding-top: rem($base-whitespace * 4)
   text-align: center
 
-  // States
+// Modifiers
 
-  &.is-upcoming
-    margin-bottom: rem($base-whitespace * 4)
-    p
-      font-size: rem(16px)
-      margin: rem(20px) auto
-      max-width: 650px
-      +respond-to($l-breakpoint--a)
-        font-size: rem(20px)
-    .talk-date
-      font-size: rem($base-fontSize)
-      margin: 0
-      max-width: none
+.talk--upcoming
+  margin-bottom: rem($base-whitespace * 4)
+  p
+    font-size: rem(16px)
+    margin: rem(20px) auto
+    max-width: 650px
+    +respond-to($l-breakpoint--a)
+      font-size: rem(20px)
+  .talk-date
+    font-size: rem($base-fontSize)
+    margin: 0
+    max-width: none
 
 // ----- Talk Label ----- //
 
