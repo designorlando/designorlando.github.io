@@ -1,11 +1,40 @@
-//-------------------------------------
-//  Layout
-//-------------------------------------
+// *************************************
+//
+//   Layout
+//   -> Margin, Padding, Sizing
+//
+// *************************************
 
-// ----- Row ----- //
+// -------------------------------------
+//   Card
+// -------------------------------------
+
+.l-card
+  +box-sizing(border-box)
+  border: $base-border
+  border-radius: $base-borderRadius
+  padding: rem($base-whitespace)
+  position: relative
+
+// -------------------------------------
+//   Cell
+// -------------------------------------
+
+%l-cell, .l-cell
+  margin: 0 auto
+  max-width: rem($l-maxWidth)
+  padding: 0 rem($base-whitespace)
+  +respond-to($l-breakpoint--a)
+    padding: 0 rem($base-whitespace * 3)
+
+// -------------------------------------
+//   Row
+// -------------------------------------
 
 .l-row, %l-row
   margin: 0 0 rem(40px)
+
+// ----- Modifiers ----- //
 
 .l-row--a
   @extend %group
@@ -19,25 +48,9 @@
     padding: rem($base-whitespace * 4) 0 rem($base-whitespace * 2)
     text-align: left
 
-// ----- Cell ----- //
-
-%l-cell, .l-cell
-  margin: 0 auto
-  max-width: rem($l-maxWidth)
-  padding: 0 rem($base-whitespace)
-  +respond-to($l-breakpoint--a)
-    padding: 0 rem($base-whitespace * 3)
-
-// ----- Card ----- //
-
-.l-card
-  +box-sizing(border-box)
-  border: $base-border
-  border-radius: $base-borderRadius
-  padding: rem($base-whitespace)
-  position: relative
-
-// ----- Utilities ----- //
+// -------------------------------------
+//   Utilities
+// -------------------------------------
 
 %l-block, .l-block
   display: block
@@ -57,7 +70,9 @@
 %l-xspace, .l-xspace
   margin-bottom: rem($base-whitespace * 2)
 
-// ----- Logo ----- //
+// -------------------------------------
+//   Submodules
+// -------------------------------------
 
 .l-logo
   margin: 0 auto rem($base-whitespace)
