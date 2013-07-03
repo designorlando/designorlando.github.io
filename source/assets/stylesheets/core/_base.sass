@@ -21,10 +21,6 @@ body
   @for $i from 1 through $colors-total
     &.color--#{$i}
       background-color: color-for($i)
-      a:hover
-        box-shadow: inset 2px 1px 0 color-for($i), 1px 2px 0 rgba(#fff, 0.4)
-      .btn:hover
-        box-shadow: inset 3px 2px 0 color-for($i), 2px 3px 0 rgba(#fff, 0.4)
 
   .l-logo a:hover
     box-shadow: none
@@ -55,7 +51,6 @@ a
   text-decoration: none
   &:hover,
   &:focus
-    background: #fff
     background: rgba(#fff, 0.4)
     color: $base-color
 
