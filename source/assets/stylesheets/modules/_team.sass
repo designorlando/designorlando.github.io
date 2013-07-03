@@ -1,0 +1,62 @@
+// *************************************
+//
+//   Team
+//
+// *************************************
+
+.team
+  @extend %group
+  margin: rem($base-whitespace * 2) auto 0
+  width: 100%
+
+// -------------------------------------
+//   Submodules
+// -------------------------------------
+
+// ----- Member ----- //
+
+.team-member
+  +box-sizing(border-box)
+  border: $base-border
+  float: left
+  margin-bottom: -$base-border-width
+  margin-right: -$base-border-width
+  padding: 0 rem(10px)
+  -webkit-transition: width 0.2s ease-in-out, background 0.2s ease-in-out
+  transition: width 0.2s ease-in-out, background 0.2s ease-in-out
+  width: 100%
+  &:hover
+    background: rgba(#fff, 0.2)
+    .team-member-avatar
+      +transform(translateY(-5px))
+      opacity: 1
+      -webkit-filter: none
+
+  +respond-to(500px)
+    width: 50%
+  +respond-to(980px)
+    width: 25%
+
+// Avatar
+
+.team-member-avatar
+  +transform(translateY(0))
+  border: $base-border
+  border-radius: 50%
+  display: block
+  margin: rem($base-whitespace) auto rem($base-whitespace / 2)
+  opacity: 0.75
+  -webkit-filter: grayscale(100%)
+  -webkit-transition: -webkit-filter 0.4s ease-in-out, opacity 0.2s ease-in-out, -webkit-transform 0.3s ease-in-out
+  transition: opacity 0.2s ease-in-out, transform 0.3s ease-in-out
+
+.team-member-avatar--logo
+  border: 0
+  opacity: 1
+  svg
+    fill: rgba(#000, 0.65)
+
+// Name
+
+.team-member-name
+  font-size: rem(20px)

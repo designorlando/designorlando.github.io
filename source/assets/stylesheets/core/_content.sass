@@ -62,14 +62,21 @@ h5, .c-h5, %c-h5
 //   Submodules
 // -------------------------------------
 
+// ----- Mastead ----- //
+
 .c-masthead
   .c-tagline, p
     display: none
+  a
+    display: inline-block
+    margin-bottom: rem($base-whitespace)
+    margin-right: rem($base-whitespace)
 
   p
     @extend %c-h3
     font-family: $base-fontFamily
     margin-top: rem(-$base-whitespace * 2)
+
   .c-tagline
     @extend %c-h1
     font-family: $c-header-fontFamily

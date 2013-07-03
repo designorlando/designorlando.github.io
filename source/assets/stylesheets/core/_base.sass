@@ -6,17 +6,17 @@
 // *************************************
 
 html
+  background: $base-background
   font-size: $base-fontSize
   height: 100%
 
 body
   +transition(background-color 0.4s ease-out)
-  background: $base-background
   color: $base-color
   font-family: $base-fontFamily
   font-size: 100%
   line-height: $base-lineHeight
-  padding-bottom: rem($base-whitespace * 4)
+  min-height: 100%
 
   @for $i from 1 through $colors-total
     &.color--#{$i}
@@ -28,7 +28,6 @@ body
 
   .l-logo a:hover
     box-shadow: none
-
 
 // -------------------------------------
 //   Block Content
