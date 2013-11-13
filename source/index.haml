@@ -19,12 +19,12 @@
           - if t.speaker
             %p.talk-author
               by
-              = link_to t.speaker, t.speakerLink
+              = link_to t.speaker, t.speaker_link
 
         - if t.meetup
           = link_to 'RSVP', "http://www.meetup.com/Design-Orlando/events/#{t.link}", class: 'btn'
         - else
-          = link_to t.linkText, t.link, class: 'btn'
+          = link_to t.link_text, t.link, class: 'btn'
 
   %h2 Past Talks
   - data.talks.list.each do |t|
@@ -42,8 +42,8 @@
           - if t.speaker
             %p.talk-author
               by
-              = link_to t.speaker, t.speakerLink
+              = link_to t.speaker, t.speaker_link
 
-        - if t.slidesLink
-          = link_to 'View Slides', t.slidesLink, class: 'btn'
+        - if t.slides_link
+          = link_to 'View Slides', t.slides_link, class: 'btn'
 

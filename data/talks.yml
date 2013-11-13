@@ -26,7 +26,7 @@ list:
     date: '08/14/13'
     title: 'Orlando Build Guild'
     link: 'http://orlando.buildguild.org/'
-    linkText: 'Build Guild'
+    link_text: 'Build Guild'
 
   - number: 10
     date: '07/09/13'
@@ -34,7 +34,7 @@ list:
     meetup: true
     link: '126820052'
     speaker: 'Jason Vanlue'
-    speakerLink: 'http://twitter.com/jasonvanlue'
+    speaker_link: 'http://twitter.com/jasonvanlue'
 
   - number: 9
     date: '06/11/13'
@@ -48,8 +48,8 @@ list:
     meetup: true
     link: '116801002'
     speaker: 'Robb Schiller'
-    speakerLink: 'http://twitter.com/robbschiller'
-    slidesLink: 'https://speakerdeck.com/robbschiller/design-thinking-workshop-design-orlando-may-2013'
+    speaker_link: 'http://twitter.com/robbschiller'
+    slides_link: 'https://speakerdeck.com/robbschiller/design-thinking-workshop-design-orlando-may-2013'
 
   - number: 7
     date: '04/09/13'
@@ -57,7 +57,7 @@ list:
     meetup: true
     link: '111518322'
     speaker: 'Envy Labs'
-    speakerLink: 'http://envylabs.com'
+    speaker_link: 'http://envylabs.com'
 
   - number: 6
     date: '03/13/13'
@@ -65,7 +65,7 @@ list:
     meetup: true
     link: '106909682'
     speaker: 'Carl Smith'
-    speakerLink: 'http://twitter.com/carlsmith'
+    speaker_link: 'http://twitter.com/carlsmith'
 
   - number: 5
     date: '02/12/13'
@@ -73,7 +73,7 @@ list:
     meetup: true
     link: '102557212'
     speaker: 'Bill Columbia'
-    speakerLink: 'http://twitter.com/billcolumbia'
+    speaker_link: 'http://twitter.com/billcolumbia'
 
   - number: 4
     date: '01/08/13'
@@ -81,8 +81,8 @@ list:
     meetup: true
     link: '97508142'
     speaker: 'Jason VanLue'
-    speakerLink: 'http://twitter.com/jasonvalue'
-    slidesLink: 'https://speakerdeck.com/designorlando/7-in-7'
+    speaker_link: 'http://twitter.com/jasonvalue'
+    slides_link: 'https://speakerdeck.com/designorlando/7-in-7'
 
   - number: 3
     date: '12/11/12'
@@ -90,7 +90,7 @@ list:
     meetup: true
     link: '89224162'
     speaker: 'Envy Labs'
-    speakerLink: 'http://envylabs.com'
+    speaker_link: 'http://envylabs.com'
 
   - number: 2
     date: '11/13/12'
@@ -98,8 +98,8 @@ list:
     meetup: true
     link: '89222462'
     speaker: 'Justin Mezzell'
-    speakerLink: 'https://twitter.com/justinmezzell'
-    slidesLink: 'https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell'
+    speaker_link: 'https://twitter.com/justinmezzell'
+    slides_link: 'https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell'
 
   - number: 1
     date: '10/09/12'
@@ -107,6 +107,6 @@ list:
     meetup: true
     link: '85466962'
     speaker: 'Nick Walsh'
-    speakerLink: 'https://twitter.com/nickawalsh'
-    slidesLink: 'https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass'
+    speaker_link: 'https://twitter.com/nickawalsh'
+    slides_link: 'https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass'
 
