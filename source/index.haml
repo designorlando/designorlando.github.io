@@ -1,127 +1,49 @@
 .talks.l-push
 
   %h2 Next Talk
+  - data.talks.list.each do |t|
+    - if t.unfilled
+      %article.l-card.talk.talk--upcoming
+        %span.talk-num= "##{ t.number }"
 
-  %article.l-card.talk.talk--upcoming
-    %span.talk-num #15
+        %p.talk-date= t.date
+        %p The speaker/topic has not been selected yet.
 
-    %p.talk-date 12/10/13
-    %p The speaker/topic has not been selected yet.
-    %a.btn(href="http://designorlandofl.wufoo.com/forms/request-to-speak/") Request to speak
+        = link_to 'Request to speak', 'http://designorlandofl.wufoo.com/forms/request-to-speak/', class: 'btn'
+    - elsif t.next
+      %article.l-card.talk.talk--upcoming
+        %span.talk-num= "##{ t.number }"
 
-  %article.l-card.talk.talk--upcoming
-    %span.talk-num #14
+        .l-xspace
+          %h1.talk-title= link_to "#{t.title}", "#{t.link}"
+          - if t.speaker
+            %p.talk-author
+              by
+              = link_to t.speaker, t.speakerLink
 
-    %p.talk-date 11/12/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/148619012/">Design Discussion: Sharing What You Do</a>
-    %p Coming off of the great discussion about process from last month, we want to discuss how to share what you do. We'll share some examples for portfolios and speaking and open up for discussion from everyone.
-    %a.btn(href="http://www.meetup.com/Design-Orlando/events/148619012/") RSVP &rarr;
-
-  %article.l-card.talk
-    %span.talk-num #13
-
-    %p.talk-date 10/08/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/143613412/">Design Discussion: Process</a>
-    %p We will be discussing the process of design and development. A couple of Envy Labs folks will kick things off discussing the challenges involved in trying the newfangled designing in the browser techniques.
-    %a.btn(href="http://www.meetup.com/Design-Orlando/events/143613412/") RSVP &rarr;
-
-  %article.l-card.talk
-    %span.talk-num #12
-
-    %p.talk-date 09/10/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/137886632/">Design Discussion: Open Source Opportunities</a>
-    %p We will be discussing the opportunities available to contribute to projects that benefit the community.
-    %a.btn(href="http://www.meetup.com/Design-Orlando/events/137886632/") RSVP &rarr;
-
-  %article.l-card.talk
-    %span.talk-num #11
-
-    %p.talk-date 08/14/13
-    %h1.talk-title <a href="http://orlando.buildguild.org/">Orlando Build Guild</a>
-    %p We'll be invading Build Guilde, a monthly gathering for web folks that enjoy chatting over drinks.
-    %a.btn(href="http://orlando.buildguild.org/") Build Guild &rarr;
-
-  %article.l-card.talk
-    %span.talk-num #10
-
-    %p.talk-date 07/09/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/126820052/">Design Discussion</a>
-    %p.talk-author by <a href="https://twitter.com/jasonvanlue">Jason VanLue</a>
-    %p This will be the last meetup in our current space, so we thought it would be cool to have our original speaker, Jason VanLue, pontificate on anything but the iOS 7 design.
-    %a.btn(href="http://www.meetup.com/Design-Orlando/events/126820052/") RSVP &rarr;
+        - if t.meetup
+          = link_to 'RSVP', "http://www.meetup.com/Design-Orlando/events/#{t.link}", class: 'btn'
+        - else
+          = link_to t.linkText, t.link, class: 'btn'
 
   %h2 Past Talks
+  - data.talks.list.each do |t|
+    - unless t.unfilled
+      %article.l-card.talk
+        %span.talk-num= "##{ t.number }"
 
-  %article.l-card.talk
-    %span.talk-num #9
+        %p.talk-date= t.date
+        .l-xspace
+          - if t.meetup
+            %h1.talk-title= link_to "#{t.title}", "http://www.meetup.com/Design-Orlando/events/#{t.link}"
+          - else
+            %h1.talk-title= link_to "#{t.title}", "#{t.link}"
 
-    %p.talk-date 06/11/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/122007492/">Show and Tell</a>
-    %p.talk-author by Everyone
-    %a.btn(href="http://www.meetup.com/Design-Orlando/events/122007492/") RSVP &rarr;
+          - if t.speaker
+            %p.talk-author
+              by
+              = link_to t.speaker, t.speakerLink
 
-  %article.l-card.talk
-    %span.talk-num #8
+        - if t.slidesLink
+          = link_to 'View Slides', t.slidesLink, class: 'btn'
 
-    %p.talk-date 05/14/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/116801002/">Design Thinking Workshop</a>
-    %p.talk-author by <a href="https://twitter.com/robbschiller">Robb Schiller</a>
-
-    %a.btn(href="https://speakerdeck.com/robbschiller/design-thinking-workshop-design-orlando-may-2013") View Slides
-
-  %article.l-card.talk
-    %span.talk-num #7
-
-    %p.talk-date 04/09/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/111518322/">Design Discussion: Narrative Design &amp; Implementation</a>
-    %p.talk-author by <a href="https://twitter.com/jasonvanlue">Jason VanLue</a>, <a href="https://twitter.com/nickawalsh">Nick Walsh</a>, &amp; <a href="https://twitter.com/justinmezzell">Justin Mezzell</a>
-
-  %article.l-card.talk
-    %span.talk-num #6
-
-    %p.talk-date 03/13/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/106909682/">Your Money &amp; Your Life?</a>
-    %p.talk-author by <a href="https://twitter.com/carlsmith">Carl Smith</a>
-
-  %article.l-card.talk
-    %span.talk-num #5
-
-    %p.talk-date 02/12/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/102557212/">Design Discussion: Mastering Your Craft</a>
-    %p.talk-author by <a href="https://twitter.com/billcolumbia">Bill Columbia</a>
-
-    %a.btn(href="https://speakerdeck.com/designorlando/craftsmanship") View Slides
-
-  %article.l-card.talk
-    %span.talk-num #4
-
-    %p.talk-date 01/08/13
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/97508142">Design Discussion</a>
-    %p.talk-author by <a href="https://twitter.com/jasonvanlue">Jason VanLue</a>
-
-    %a.btn(href="https://speakerdeck.com/designorlando/7-in-7") View Slides
-
-  %article.l-card.talk
-    %span.talk-num #3
-
-    %p.talk-date 12/11/12
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/89224162/">DO Grok</a>
-    %p.talk-author by <a href="http://twitter.com/nickawalsh">Nick Walsh</a> &amp; <a href="http://twitter.com/drewbarontini">Drew Barontini</a>
-
-  %article.l-card.talk
-    %span.talk-num #2
-
-    %p.talk-date 11/13/12
-    %h1.talk-title <a href="http://www.meetup.com/design-orlando/events/89222462/">Designing With a Narrative in&nbsp;Mind</a>
-    %p.talk-author by <a href="https://twitter.com/justinmezzell">Justin Mezzell</a>
-
-    %a.btn(href="https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell") View Slides
-
-  %article.l-card.talk
-    %span.talk-num #1
-
-    %p.talk-date 10/09/12
-    %h1.talk-title <a href="http://www.meetup.com/Design-Orlando/events/85466962/">Bridging Design Gaps with Sass&nbsp;+ Compass</a>
-    %p.talk-author by <a href="http://twitter.com/nickawalsh">Nick Walsh</a>
-
-    %a.btn(href="https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass") View Slides
