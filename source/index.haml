@@ -28,7 +28,7 @@
 
   %h2 Past Talks
   - data.talks.list.each do |t|
-    - unless t.unfilled
+    - unless t.unfilled || t.next
       %article.l-card.talk
         %span.talk-num= "##{ t.number }"
 

@@ -2,7 +2,10 @@ list:
 
   - number: 15
     date: '12/10/13'
-    unfilled: true
+    next: true
+    title: 'Design Discussion with Adam Grason'
+    meetup: true
+    link: '152786162'
 
   - number: 14
     date: '11/12/13'
