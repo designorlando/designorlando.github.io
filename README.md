@@ -10,6 +10,7 @@ There is a `data/talks.yml` file that holds each talk. Each talk looks something
 
 ```yaml
 - number: 1 # The talk number
+  next: true # Is this talk the next talk?
   date: '05/14/13' # The date of the talk
   title: 'Design Thinking Workshop' # The talk title
   meetup: true # Does the talk have a Meetup page?
@@ -26,8 +27,6 @@ For upcoming talks that aren't schedule yet, just provide the `number`, `date`, 
   date: '05/14/13' # The date of the talk
   unfilled: true # If the talk hasn't been filled yet
 ```
-
-For talks that *are* scheduled, add a `next: true` to the list of data.
 
 ## Build
 
