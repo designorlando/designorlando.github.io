@@ -27,6 +27,8 @@ For upcoming talks that aren't schedule yet, just provide the `number`, `date`, 
   unfilled: true # If the talk hasn't been filled yet
 ```
 
+For talks that *are* scheduled, add a `next: true` to the list of data.
+
 ## Build
 
 - Run `middleman build` (or `./bin/middleman build`) *before* pushing up your changes
