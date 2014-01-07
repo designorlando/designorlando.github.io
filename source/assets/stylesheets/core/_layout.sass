@@ -80,6 +80,30 @@
 //   Submodules
 // -------------------------------------
 
+// ----- Footer ----- //
+
+.l-footer
+  margin-bottom: rem($base-whitespace * 4)
+  margin-top: rem($base-whitespace * 4)
+  position: relative
+
+.l-footer-logo
+  border: 0
+  bottom: rem($base-whitespace * 2)
+  display: block
+  left: 50%
+  margin-left: -80px
+  position: absolute
+  svg
+    height: 79px
+    width: 160px
+    fill: rgba(#000, 0.7)
+  &:hover,
+  &:focus
+    background: none
+    svg
+      fill: rgba(#fff, 0.4)
+
 // ----- Logo ----- //
 
 .l-logo
@@ -89,7 +113,8 @@
   a
     border: 0
     display: block
-  a:hover
+  a:hover,
+  a:focus
     background: none
     svg
       fill: rgba(#fff, 0.4)
