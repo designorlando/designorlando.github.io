@@ -1,13 +1,17 @@
 list:
 
+  - number: 17
+    date: '02/11/14'
+    unfilled: true
+
   - number: 16
-    next: true
     date: '01/14/14'
     title: 'Designing for Convenience'
     meetup: true
     link: '158182792'
     speaker: 'Nick Hehr'
     speaker_link: 'http://twitter.com/hipsterbrown'
+    slides_link: 'https://speakerdeck.com/hipsterbrown/designing-for-convenience'
 
   - number: 15
     date: '12/10/13'
