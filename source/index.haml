@@ -14,6 +14,7 @@
       %article.l-card.talk.talk--upcoming
         %span.talk-num= "##{ t.number }"
 
+        %p.talk-date= t.date
         .l-xspace
           %h1.talk-title= link_to "#{t.title}", "http://www.meetup.com/Design-Orlando/events/#{t.link}"
           - if t.speaker
