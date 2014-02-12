@@ -3,6 +3,7 @@ list:
   - number: 18
     date: '03/11/14'
     next: true
+    unfilled: true
 
   - number: 17
     date: '02/11/14'
