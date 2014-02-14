@@ -12,6 +12,7 @@ list:
     link: '163282482'
     speaker: 'Dan Denney'
     speaker_link: 'http://twitter.com/dandenney'
+    slides_link: 'https://speakerdeck.com/dandenney/creating-html-emails-can-be-fun-1'
 
   - number: 16
     date: '01/14/14'
