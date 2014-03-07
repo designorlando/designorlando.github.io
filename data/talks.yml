@@ -3,7 +3,11 @@ list:
   - number: 18
     date: '03/11/14'
     next: true
-    unfilled: true
+    title: 'Discussion: "No Wide Screen" Constraint'
+    meetup: true
+    link: '169993672'
+    speaker: 'Dan Denney'
+    speaker_link: 'http://twitter.com/dandenney'
 
   - number: 17
     date: '02/11/14'
@@ -134,4 +138,3 @@ list:
     speaker: 'Nick Walsh'
     speaker_link: 'https://twitter.com/nickawalsh'
     slides_link: 'https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass'
-
