@@ -4,6 +4,8 @@
 - `bundle`
 - `middleman s` (`./bin/middleman s`, if using rbenv/binstubs)
 
+Work off of the `development` branch, as `master` is used for serving up the static files.
+
 ## Adding Talks
 
 There is a `data/talks.yml` file that holds each talk. Each talk looks something like this:
