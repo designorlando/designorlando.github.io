@@ -1,8 +1,16 @@
 list:
 
+  - number: 19
+    date: '04/18/14'
+    next: true
+    title: 'Discussion: Snap Judgements + Show and Tell'
+    meetup: true
+    link: '174512692'
+    speaker: 'Nick Hehr'
+    speaker_link: 'http://twitter.com/hipsterbrown'
+
   - number: 18
     date: '03/11/14'
-    next: true
     title: 'Discussion: "No Wide Screen" Constraint'
     meetup: true
     link: '169993672'
