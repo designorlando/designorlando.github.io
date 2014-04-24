@@ -1,153 +1,151 @@
-list:
+- number: 20
+  date: '05/13/14'
+  next: true
+  unfilled: true
 
-  - number: 20
-    date: '05/13/14'
-    next: true
-    unfilled: true
+- number: 19
+  date: '04/8/14'
+  title: 'Discussion: Snap Judgements + Show and Tell'
+  meetup: true
+  link: '174512692'
+  speaker: 'Nick Hehr'
+  speaker_link: 'http://twitter.com/hipsterbrown'
+  slides_link: 'https://speakerdeck.com/hipsterbrown/snap-judgements-the-other-side-of-empathy'
 
-  - number: 19
-    date: '04/8/14'
-    title: 'Discussion: Snap Judgements + Show and Tell'
-    meetup: true
-    link: '174512692'
-    speaker: 'Nick Hehr'
-    speaker_link: 'http://twitter.com/hipsterbrown'
-    slides_link: 'https://speakerdeck.com/hipsterbrown/snap-judgements-the-other-side-of-empathy'
+- number: 18
+  date: '03/11/14'
+  title: 'Discussion: "No Wide Screen" Constraint'
+  meetup: true
+  link: '169993672'
+  speaker: 'Dan Denney'
+  speaker_link: 'http://twitter.com/dandenney'
 
-  - number: 18
-    date: '03/11/14'
-    title: 'Discussion: "No Wide Screen" Constraint'
-    meetup: true
-    link: '169993672'
-    speaker: 'Dan Denney'
-    speaker_link: 'http://twitter.com/dandenney'
+- number: 17
+  date: '02/11/14'
+  title: 'Creating HTML Emails Can Be Fun'
+  meetup: true
+  link: '163282482'
+  speaker: 'Dan Denney'
+  speaker_link: 'http://twitter.com/dandenney'
+  slides_link: 'https://speakerdeck.com/dandenney/creating-html-emails-can-be-fun-1'
 
-  - number: 17
-    date: '02/11/14'
-    title: 'Creating HTML Emails Can Be Fun'
-    meetup: true
-    link: '163282482'
-    speaker: 'Dan Denney'
-    speaker_link: 'http://twitter.com/dandenney'
-    slides_link: 'https://speakerdeck.com/dandenney/creating-html-emails-can-be-fun-1'
+- number: 16
+  date: '01/14/14'
+  title: 'Designing for Convenience'
+  meetup: true
+  link: '158182792'
+  speaker: 'Nick Hehr'
+  speaker_link: 'http://twitter.com/hipsterbrown'
+  slides_link: 'https://speakerdeck.com/hipsterbrown/designing-for-convenience'
 
-  - number: 16
-    date: '01/14/14'
-    title: 'Designing for Convenience'
-    meetup: true
-    link: '158182792'
-    speaker: 'Nick Hehr'
-    speaker_link: 'http://twitter.com/hipsterbrown'
-    slides_link: 'https://speakerdeck.com/hipsterbrown/designing-for-convenience'
+- number: 15
+  date: '12/10/13'
+  title: 'Design Discussion with Adam Grason'
+  meetup: true
+  link: '152786162'
 
-  - number: 15
-    date: '12/10/13'
-    title: 'Design Discussion with Adam Grason'
-    meetup: true
-    link: '152786162'
+- number: 14
+  date: '11/12/13'
+  title: 'Design Discussion: Sharing What You Do'
+  meetup: true
+  link: '148619012'
 
-  - number: 14
-    date: '11/12/13'
-    title: 'Design Discussion: Sharing What You Do'
-    meetup: true
-    link: '148619012'
+- number: 13
+  date: '10/08/13'
+  title: 'Design Discussion: Process'
+  meetup: true
+  link: '143613412'
 
-  - number: 13
-    date: '10/08/13'
-    title: 'Design Discussion: Process'
-    meetup: true
-    link: '143613412'
+- number: 12
+  date: '09/10/13'
+  title: 'Design Discussion: Open Source Opportunities'
+  meetup: true
+  link: '137886632'
 
-  - number: 12
-    date: '09/10/13'
-    title: 'Design Discussion: Open Source Opportunities'
-    meetup: true
-    link: '137886632'
+- number: 11
+  date: '08/14/13'
+  title: 'Orlando Build Guild'
+  link: 'http://orlando.buildguild.org/'
+  link_text: 'Build Guild'
 
-  - number: 11
-    date: '08/14/13'
-    title: 'Orlando Build Guild'
-    link: 'http://orlando.buildguild.org/'
-    link_text: 'Build Guild'
+- number: 10
+  date: '07/09/13'
+  title: 'Design Discussion'
+  meetup: true
+  link: '126820052'
+  speaker: 'Jason Vanlue'
+  speaker_link: 'http://twitter.com/jasonvanlue'
 
-  - number: 10
-    date: '07/09/13'
-    title: 'Design Discussion'
-    meetup: true
-    link: '126820052'
-    speaker: 'Jason Vanlue'
-    speaker_link: 'http://twitter.com/jasonvanlue'
+- number: 9
+  date: '06/11/13'
+  title: 'Show and Tell'
+  meetup: true
+  link: '122007492'
 
-  - number: 9
-    date: '06/11/13'
-    title: 'Show and Tell'
-    meetup: true
-    link: '122007492'
+- number: 8
+  date: '05/14/13'
+  title: 'Design Thinking Workshop'
+  meetup: true
+  link: '116801002'
+  speaker: 'Robb Schiller'
+  speaker_link: 'http://twitter.com/robbschiller'
+  slides_link: 'https://speakerdeck.com/robbschiller/design-thinking-workshop-design-orlando-may-2013'
 
-  - number: 8
-    date: '05/14/13'
-    title: 'Design Thinking Workshop'
-    meetup: true
-    link: '116801002'
-    speaker: 'Robb Schiller'
-    speaker_link: 'http://twitter.com/robbschiller'
-    slides_link: 'https://speakerdeck.com/robbschiller/design-thinking-workshop-design-orlando-may-2013'
+- number: 7
+  date: '04/09/13'
+  title: 'Design Discussion: Narrative Design & Implementation'
+  meetup: true
+  link: '111518322'
+  speaker: 'Envy Labs'
+  speaker_link: 'http://envylabs.com'
 
-  - number: 7
-    date: '04/09/13'
-    title: 'Design Discussion: Narrative Design & Implementation'
-    meetup: true
-    link: '111518322'
-    speaker: 'Envy Labs'
-    speaker_link: 'http://envylabs.com'
+- number: 6
+  date: '03/13/13'
+  title: 'Your Money & Your Life?'
+  meetup: true
+  link: '106909682'
+  speaker: 'Carl Smith'
+  speaker_link: 'http://twitter.com/carlsmith'
 
-  - number: 6
-    date: '03/13/13'
-    title: 'Your Money & Your Life?'
-    meetup: true
-    link: '106909682'
-    speaker: 'Carl Smith'
-    speaker_link: 'http://twitter.com/carlsmith'
+- number: 5
+  date: '02/12/13'
+  title: 'Design Discussion: Mastering Your Craft'
+  meetup: true
+  link: '102557212'
+  speaker: 'Bill Columbia'
+  speaker_link: 'http://twitter.com/billcolumbia'
 
-  - number: 5
-    date: '02/12/13'
-    title: 'Design Discussion: Mastering Your Craft'
-    meetup: true
-    link: '102557212'
-    speaker: 'Bill Columbia'
-    speaker_link: 'http://twitter.com/billcolumbia'
+- number: 4
+  date: '01/08/13'
+  title: 'Design Discussion'
+  meetup: true
+  link: '97508142'
+  speaker: 'Jason VanLue'
+  speaker_link: 'http://twitter.com/jasonvalue'
+  slides_link: 'https://speakerdeck.com/designorlando/7-in-7'
 
-  - number: 4
-    date: '01/08/13'
-    title: 'Design Discussion'
-    meetup: true
-    link: '97508142'
-    speaker: 'Jason VanLue'
-    speaker_link: 'http://twitter.com/jasonvalue'
-    slides_link: 'https://speakerdeck.com/designorlando/7-in-7'
+- number: 3
+  date: '12/11/12'
+  title: 'DO Grok'
+  meetup: true
+  link: '89224162'
+  speaker: 'Envy Labs'
+  speaker_link: 'http://envylabs.com'
 
-  - number: 3
-    date: '12/11/12'
-    title: 'DO Grok'
-    meetup: true
-    link: '89224162'
-    speaker: 'Envy Labs'
-    speaker_link: 'http://envylabs.com'
+- number: 2
+  date: '11/13/12'
+  title: 'Designing With A Narrative in Mind'
+  meetup: true
+  link: '89222462'
+  speaker: 'Justin Mezzell'
+  speaker_link: 'https://twitter.com/justinmezzell'
+  slides_link: 'https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell'
 
-  - number: 2
-    date: '11/13/12'
-    title: 'Designing With A Narrative in Mind'
-    meetup: true
-    link: '89222462'
-    speaker: 'Justin Mezzell'
-    speaker_link: 'https://twitter.com/justinmezzell'
-    slides_link: 'https://speakerdeck.com/designorlando/design-discussion-with-justin-mezzell'
-
-  - number: 1
-    date: '10/09/12'
-    title: 'Bridging Design Gaps with Sass & Compass'
-    meetup: true
-    link: '85466962'
-    speaker: 'Nick Walsh'
-    speaker_link: 'https://twitter.com/nickawalsh'
-    slides_link: 'https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass'
+- number: 1
+  date: '10/09/12'
+  title: 'Bridging Design Gaps with Sass & Compass'
+  meetup: true
+  link: '85466962'
+  speaker: 'Nick Walsh'
+  speaker_link: 'https://twitter.com/nickawalsh'
+  slides_link: 'https://speakerdeck.com/designorlando/bridging-design-gaps-with-sass-plus-compass'

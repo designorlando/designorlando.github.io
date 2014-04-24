@@ -1,7 +1,7 @@
 .talks.l-push
 
   %h2 Next Talk
-  - data.talks.list.each do |t|
+  - data.talks.each do |t|
     - if t.unfilled
       %article.l-card.talk.talk--upcoming
         %span.talk-num= "##{ t.number }"
@@ -28,7 +28,7 @@
           = link_to t.link_text, t.link, class: 'btn'
 
   %h2 Past Talks
-  - data.talks.list.each do |t|
+  - data.talks.each do |t|
     - unless t.unfilled || t.next
       %article.l-card.talk
         %span.talk-num= "##{ t.number }"
