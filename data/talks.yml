@@ -1,11 +1,16 @@
+- number: 21
+  date: '06/10/14'
+  next: true
+  unfilled: true
+
 - number: 20
   date: '05/13/14'
   title: 'Sketchocalypse'
-  next: true
   meetup: true
   link: '181289732'
   speaker: 'Drew Barontini'
   speaker_link: 'http://twitter.com/drewbarontini'
+  slides_link: 'http://talks.drewb.io/sketchocalypse/#/'
 
 - number: 19
   date: '04/8/14'
