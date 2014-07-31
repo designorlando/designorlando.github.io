@@ -1,7 +1,13 @@
+- number: 23
+  date: '08/12/14'
+  title: 'Amplifying Collective Intelligence'
+  next: true
+  meetup: true
+  link: '198148602'
+
 - number: 22
   date: '07/08/14'
   title: 'Show and Tell'
-  next: true
   meetup: true
   link: '193503892'
 
