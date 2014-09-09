@@ -1,7 +1,13 @@
+- number: 24
+  date: '09/09/14'
+  title: 'Over the Shoulder: Responsive Nav Design'
+  meetup: true
+  next: true
+  link: '203718242'
+
 - number: 23
   date: '08/12/14'
   title: 'Amplifying Collective Intelligence'
-  next: true
   meetup: true
   link: '198148602'
 
