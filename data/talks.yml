@@ -1,8 +1,14 @@
+- number: 25
+  date: '10/17/14'
+  title: 'Better UX Prototyping with InVision'
+  meetup: true
+  next: true
+  link: '209018882'
+
 - number: 24
   date: '09/09/14'
   title: 'Over the Shoulder: Responsive Nav Design'
   meetup: true
-  next: true
   link: '203718242'
 
 - number: 23
