@@ -6,7 +6,12 @@
 
 # Ignore bundler config
 /.bundle
+
+# Ignore bin/
 bin/
+
+# Ignore Middleman's build directory
+build/
 
 # Ignore Sass' cache
 /.sass-cache
