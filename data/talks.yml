@@ -1,6 +1,10 @@
+- number: 27
+  date: '12/09/14'
+  next: true
+  unfilled: true
+
 - number: 26
   date: '11/10/14'
-  next: true
   meetup: true
   link: '217942592'
   title: 'Design Discussion with Nick Walsh'
