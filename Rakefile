@@ -6,7 +6,7 @@ task :generate do
   cd "build" do
     system "touch .nojekyll"
     system "git init"
-    system "git remote add origin git@github.com:designorlando/designorlando.github.com.git"
+    system "git remote add origin git@github.com:designorlando/designorlando.github.io.git"
   end
 end
 
