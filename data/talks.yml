@@ -1,7 +1,9 @@
 - number: 27
   date: '12/09/14'
   next: true
-  unfilled: true
+  meetup: true
+  link: '218911772'
+  title: 'Your DO Wish List'
 
 - number: 26
   date: '11/10/14'
