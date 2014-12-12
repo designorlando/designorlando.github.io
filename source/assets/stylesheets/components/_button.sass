@@ -1,0 +1,49 @@
+// *************************************
+//
+//   Button
+//   -> Clickable item
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+//
+// .btn
+//
+// *************************************
+
+.btn
+  border: $b-borderStyle $b-borderWidth $c-highlight
+  border-radius: $b-borderRadius
+  color: $c-highlight
+  display: inline-block
+  font-size: $b-fontSize
+  font-weight: bold
+  line-height: 3
+  padding: 0 $b-space-l
+  transition: all 0.3s ease-in-out
+
+  &:hover,
+  &:focus
+    background: $c-highlight
+    color: $c-background-invert
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Invert ----- //
+
+.btn--invert
+  border-color: $c-background-invert
+  color: $c-text-invert
+
+  &:hover,
+  &:focus
+    background: $c-background-invert
+    color: $c-highlight
+
+// ----- Sizes ----- //
+
+.btn--s
+  line-height: 2.5

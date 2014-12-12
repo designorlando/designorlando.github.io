@@ -1,0 +1,36 @@
+// *************************************
+//
+//   Well
+//   -> Vertical spacing
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .well
+//   / ...
+//
+// *************************************
+
+.well
+  margin-bottom: $b-space
+  margin-top: $b-space
+
+  +respond-to($g-m)
+    margin-bottom: $b-space-l
+    margin-top: $b-space-l
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Sizes ----- //
+
+.well--l
+  margin-bottom: $b-space-l
+  margin-top: $b-space-l
+
+  +respond-to($g-m)
+    margin-bottom: $b-space-xl
+    margin-top: $b-space-xl
+

@@ -1,0 +1,13 @@
+%header.header
+
+  = image_tag 'logo.svg', alt: 'Design Orlando', class: 'db mbl mhc'
+
+  %h1.mbs.tac.tci
+    A monthly design meetup in
+    %span.db
+      = succeed '.' do
+        %b.twn Downtown Orlando
+
+  .tac
+    = link_to 'View Meetup', meetup_url, class: 'btn btn--invert'
+

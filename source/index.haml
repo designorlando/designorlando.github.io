@@ -1,50 +1,68 @@
-.talks.l-push
+.row.row--b
+  .cell.well
 
-  %h2 Next Talk
-  - data.talks.each do |t|
-    - if t.unfilled
-      %article.l-card.talk.talk--upcoming
-        %span.talk-num= "##{ t.number }"
+    %h2.mbxs Next Talk
 
-        %p.talk-date= t.date
-        %p The speaker/topic has not been selected yet.
+    - data.talks.each_with_index do |talk, index|
+      = partial 'talks/talk', locals: { talk: talk, number: index }
 
-        = link_to 'Request to speak', 'http://designorlandofl.wufoo.com/forms/request-to-speak/', class: 'btn'
-    - elsif t.next
-      %article.l-card.talk.talk--upcoming
-        %span.talk-num= "##{ t.number }"
+.row
+  .cell.well
 
-        %p.talk-date= t.date
-        .l-xspace
-          %h1.talk-title= link_to "#{t.title}", "http://www.meetup.com/Design-Orlando/events/#{t.link}"
-          - if t.speaker
-            %p.talk-author
-              by
-              = link_to t.speaker, t.speaker_link
+    %h2 Past Talks
 
-        - if t.meetup
-          = link_to 'RSVP', "http://www.meetup.com/Design-Orlando/events/#{t.link}", class: 'btn'
-        - else
-          = link_to t.link_text, t.link, class: 'btn'
+    - data.talks.each_with_index do |talk, index|
+      - unless index == 0
+        = partial 'talks/past_talk', locals: { talk: talk, number: index }
 
-  %h2 Past Talks
-  - data.talks.each do |t|
-    - unless t.unfilled || t.next
-      %article.l-card.talk
-        %span.talk-num= "##{ t.number }"
+-#
+  .talks.l-push
 
-        %p.talk-date= t.date
-        .l-xspace
-          - if t.meetup
+    %h2 Next Talk
+    - data.talks.each do |t|
+      - if t.unfilled
+        %article.l-card.talk.talk--upcoming
+          %span.talk-num= "##{ t.number }"
+
+          %p.talk-date= t.date
+          %p The speaker/topic has not been selected yet.
+
+          = link_to 'Request to speak', 'http://designorlandofl.wufoo.com/forms/request-to-speak/', class: 'btn'
+      - elsif t.next
+        %article.l-card.talk.talk--upcoming
+          %span.talk-num= "##{ t.number }"
+
+          %p.talk-date= t.date
+          .l-xspace
             %h1.talk-title= link_to "#{t.title}", "http://www.meetup.com/Design-Orlando/events/#{t.link}"
+            - if t.speaker
+              %p.talk-author
+                by
+                = link_to t.speaker, t.speaker_link
+
+          - if t.meetup
+            = link_to 'RSVP', "http://www.meetup.com/Design-Orlando/events/#{t.link}", class: 'btn'
           - else
-            %h1.talk-title= link_to "#{t.title}", "#{t.link}"
+            = link_to t.link_text, t.link, class: 'btn'
 
-          - if t.speaker
-            %p.talk-author
-              by
-              = link_to t.speaker, t.speaker_link
+    %h2 Past Talks
+    - data.talks.each do |t|
+      - unless t.unfilled || t.next
+        %article.l-card.talk
+          %span.talk-num= "##{ t.number }"
 
-        - if t.slides_link
-          = link_to 'View Slides', t.slides_link, class: 'btn'
+          %p.talk-date= t.date
+          .l-xspace
+            - if t.meetup
+              %h1.talk-title= link_to "#{t.title}", "http://www.meetup.com/Design-Orlando/events/#{t.link}"
+            - else
+              %h1.talk-title= link_to "#{t.title}", "#{t.link}"
+
+            - if t.speaker
+              %p.talk-author
+                by
+                = link_to t.speaker, t.speaker_link
+
+          - if t.slides_link
+            = link_to 'View Slides', t.slides_link, class: 'btn'
 

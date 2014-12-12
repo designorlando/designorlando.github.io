@@ -2,18 +2,25 @@ activate :livereload
 activate :relative_assets
 activate :directory_indexes
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 10']
+  config.cascade = false
+end
+
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
-helpers do
-  def is_page_active(page)
-    current_page.url == page ? {:class => 'is-active'} : {}
-  end
+set :codeschool_url, 'http://www.codeschool.com'
+set :envy_url, 'http://madewithenvy.com'
+set :flickr_url, 'http://www.flickr.com/groups/designorlando'
+set :meetup_url, 'http://www.meetup.com/Design-Orlando'
+set :twitter_url, 'http://twitter.com/designorlando'
 
-  def is_section_active(section)
-    current_page.url.match(section) ? {:class => 'is-section-active'} : {}
+helpers do
+  def get_meetup_link(id)
+    "#{ meetup_url }/events/#{ id }"
   end
 end
 

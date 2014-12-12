@@ -1,0 +1,25 @@
+- if talk.next
+
+  %h3.h1.twl
+    = link_to talk.title, get_meetup_link(talk.link)
+    %span.tcs ##{ talk.number }
+
+  %p.mbm
+
+    - if talk.speaker
+
+      %span.tcs by
+      %strong= link_to talk.speaker, talk.speaker_link
+
+    %span.tcs on
+    %strong= talk.date
+
+    %span.tcs at
+    %strong 7:00pm
+
+- elsif talk.unfilled
+
+  .tac
+    %p.mtm.tcs.tsi The next talk has not been scheduled, which means it could be you!
+    = link_to 'Request to Speak!', '#', class: 'btn btn--s'
+

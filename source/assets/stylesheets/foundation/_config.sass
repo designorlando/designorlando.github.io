@@ -1,0 +1,105 @@
+// *************************************
+//
+//   Config
+//   -> Fonts, Variables
+//
+// *************************************
+
+// -------------------------------------
+//   @font-face
+// -------------------------------------
+
+// ----- Open Sans ----- //
+
+@import 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700'
+
+// -------------------------------------
+//   Colors
+// -------------------------------------
+
+// ----- Palette ----- //
+
+//$primary: #2a4849
+$primary: #2c286d
+
+// ----- Base ----- //
+
+$c-background-invert: #fff
+$c-background: #f5f5f5
+$c-border: #eee
+$c-highlight: $primary
+$c-highlight-subdue: lighten(desaturate($primary, 10%), 25%)
+$c-subdue: darken($c-background, 25%)
+$c-text-invert: #fff
+$c-text: #222
+
+// ----- Components ----- //
+
+// ...
+
+// ----- Structures ----- //
+
+// ...
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderRadius: 4px
+$b-borderStyle: solid
+$b-borderWidth: 2px
+$b-border: $b-borderWidth $b-borderStyle $c-border
+$b-boxShadow: 0 2px 0 rgba($c-text, 0.05)
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading: 'Open Sans', sans-serif
+$b-fontFamily: 'Open Sans', sans-serif
+$b-fontSize: 16px
+$b-fontSize-xs: 60%
+$b-fontSize-s: 75%
+$b-fontSize-m: 90%
+$b-fontSize-l: 115%
+$b-fontSize-xl: 150%
+$b-lineHeight: 1.5
+
+// ----- Sizing ----- //
+
+$b-maxWidth: em(800px)
+$b-space: em(20px)
+$b-space-xs: $b-space * 0.25
+$b-space-s: $b-space * 0.5
+$b-space-l: $b-space * 2
+$b-space-xl: $b-space * 4
+
+// -------------------------------------
+//   Components
+// -------------------------------------
+
+// ----- Grid ----- //
+
+// Breakpoints
+
+$g-s: em(480px)
+$g-m: em(800px)
+$g-l: em(1024px)
+
+// Settings
+
+$g-columns: 1
+$g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
+$g-gutter: 20px
+$g-silent: false
+
+// Selector
+
+$g-selector: if($g-silent, unquote("%"), unquote("."))
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
+
+// ...
+

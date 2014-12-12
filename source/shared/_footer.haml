@@ -1,0 +1,21 @@
+.row.row--a
+  .cell.well
+
+    .brandBlock
+
+      %ul.list.list--object.list--object--single
+
+        %li.list-item.mts
+          = link_to envy_url, class: 'brandBlock-link' do
+            = image_tag 'logo-envy.svg', alt: 'Envy', class: 'brandBlock-img'
+
+        %li.list-item
+          = link_to codeschool_url, class: 'brandBlock-link' do
+            = image_tag 'logo-cs.svg', alt: 'Code School', class: 'brandBlock-img'
+
+    %ul.list.list--inline.tac
+      %li.list-item= link_to 'Follow us on Twitter', twitter_url, class: 'link link--invert'
+      %li.list-item= link_to 'View our photos on Flickr', flickr_url, class: 'link link--invert'
+
+= partial 'shared/gauges' if build?
+

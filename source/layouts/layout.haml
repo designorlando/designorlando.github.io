@@ -16,39 +16,12 @@
 
   %body{ class: page_classes }
 
-    %ul.colors.colors--8
-      %li <a class="color--1" href="#16a085">#16a085</a>
-      %li <a class="color--2" href="#27ae60">#27ae60</a>
-      %li <a class="color--3" href="#2980b9">#2980b9</a>
-      %li <a class="color--4" href="#7f8c8d">#7f8c8d</a>
-      %li <a class="color--5" href="#f6775f">#f6775f</a>
-      %li <a class="color--6" href="#596a7b">#596a7b</a>
-      %li <a class="color--7" href="#ac77c3">#ac77c3</a>
-      %li <a class="color--8" href="#c75649">#c75649</a>
+    .row.row--a
+      .cell.well.well--l
 
-    %header.l-row--a
-      .l-cell
-        %h1.l-logo
-          %a(href="/")
-            = partial 'shared/logo'
-        .c-masthead
-          %p.c-tagline Meet. Learn. DO.
-          %p.l-flush A monthly design meetup at <a href="http://envylabs.com/">Envy Labs</a>
+        = partial 'shared/header'
 
-          %nav.nav
-            %a.btn.btn--mini(href="http://twitter.com/designorlandofl") Twitter
-            %a.btn.btn--mini(href="http://www.flickr.com/groups/designorlando/") Flickr
+    %main.content.pbxl
+      = yield
 
-    .l-cell= yield
-
-    %footer.l-footer
-      = link_to 'http://envylabs.com', class: 'l-footer-logo' do
-        = partial 'shared/logo_envy'
-
-    = partial 'shared/gauges' if build?
-
-    = javascript_include_tag 'http://code.jquery.com/jquery-1.9.1.min.js'
-    = javascript_include_tag 'vendor/jquery.cookie.js'
-    = javascript_include_tag 'color_selector'
-    :coffeescript
-      $ -> new ColorSelector('.colors a')
+    = partial 'shared/footer'

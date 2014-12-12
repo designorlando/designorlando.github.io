@@ -1,0 +1,43 @@
+// *************************************
+//
+//   Brand Block
+//   -> Them logos...
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .brandBlock
+//   .brandBlock-link
+//     .brandBlock-img
+//
+// *************************************
+
+.brandBlock
+  margin: 0 auto $b-space-l
+
+  +respond-to($g-m)
+    width: 534px // FIXME: Magic number!
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Image ----- //
+
+.brandBlock-img
+  display: block
+  margin: 0 auto
+
+  +respond-to($g-m)
+    margin: 0
+
+// ----- Link ----- //
+
+.brandBlock-link
+  display: block
+  opacity: 0.15
+
+  &:hover,
+  &:focus
+    opacity: 1

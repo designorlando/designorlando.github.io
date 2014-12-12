@@ -1,0 +1,33 @@
+// *************************************
+//
+//   Link
+//   -> Text links
+//
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .link[.link--invert]
+//
+// *************************************
+
+.link
+  color: $c-highlight
+  text-decoration: none
+  transition: all 0.2s ease-in-out
+
+  &:hover,
+  &:focus
+    color: lighten($c-highlight, 10%)
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.link--invert
+  color: $c-highlight-subdue
+
+  &:hover,
+  &:focus
+    color: $c-background-invert
+
