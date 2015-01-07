@@ -53,6 +53,11 @@
   > .list-item
     margin-right: 0
 
+.list--inline--xs
+
+  > .list-item
+    margin-right: $b-space-xs
+
 // ----- Object ----- //
 
 .list--object
@@ -76,6 +81,20 @@
 
   > .list-item
     margin-bottom: 0
+
+// ----- Separated ----- //
+
+.list--separated
+
+  > .list-item
+    &::after
+      color: $c-subdue
+      content: '\00B7'
+      font-size: 100%
+      padding-left: $b-space-xs
+
+    &:last-child::after
+      content: ''
 
 // -------------------------------------
 //   Scaffolding

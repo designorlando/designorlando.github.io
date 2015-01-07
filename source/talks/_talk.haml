@@ -6,18 +6,18 @@
     = link_to talk.title, talk_link
     %span.tcs ##{ talk.number }
 
-  %p.mbm
+  %ul.list.list--inline.list--inline--xs.list--separated
 
     - if talk.speaker
 
-      %span.tcs by
-      %strong= link_to talk.speaker, talk.speaker_link
+      %li.list-item
+        %strong= link_to talk.speaker, talk.speaker_link
 
-    %span.tcs on
-    %strong= talk.date
+    %li.list-item
+      %strong= talk.date
 
-    %span.tcs at
-    %strong 7:00pm
+    %li.list-item
+      %strong 7:00pm
 
 - elsif talk.unfilled
 

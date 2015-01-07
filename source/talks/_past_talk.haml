@@ -1,8 +1,22 @@
 - talk_link =  talk.meetup ? get_meetup_link(talk.link) : talk.link
 
-= link_to talk_link do
+.card.mbs
 
-  .card.mbs
+  %span.card-denotation ##{ talk.number }
 
-    %span.dn.db--m.poa.porm.potm.tcs ##{ talk.number }
-    %h3.h4.mbf.twl= talk.title
+  %h3.h4.twl= link_to talk.title, talk_link
+
+  %ul.list.list--inline.list--inline--xs.list--separated
+
+    - if talk.speaker
+
+      %li.list-item
+        %strong= link_to talk.speaker, talk.speaker_link
+
+    %li.list-item
+      %strong= talk.date
+
+    - if talk.slides_link
+      %li.list-item
+        = link_to talk.slides_link, class: 'twb' do
+          Slides

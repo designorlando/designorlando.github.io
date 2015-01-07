@@ -15,5 +15,21 @@
 .card
   background: $c-background-invert
   border-radius: $b-borderRadius
+  box-shadow: $b-boxShadow
   padding: $b-space
   position: relative
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.card-denotation
+  color: $c-subdue
+  display: none
+  position: absolute
+  right: $b-space
+  transform: translateY(-50%)
+  top: 50%
+
+  +respond-to($g-m)
+    display: block

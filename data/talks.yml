@@ -17,7 +17,7 @@
   date: '11/10/14'
   meetup: true
   link: '217942592'
-  title: 'Design Discussion with Nick Walsh'
+  title: 'Design Discussion'
   speaker: 'Nick Walsh'
   speaker_link: 'http://twitter.com/nickawalsh'
 
@@ -100,9 +100,11 @@
 
 - number: 15
   date: '12/10/13'
-  title: 'Design Discussion with Adam Grason'
+  title: 'Design Discussion'
   meetup: true
   link: '152786162'
+  speaker: 'Adam Grason'
+  speaker_link: 'https://twitter.com/adamgrason'
 
 - number: 14
   date: '11/12/13'
