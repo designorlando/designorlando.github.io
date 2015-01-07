@@ -16,7 +16,7 @@ set :codeschool_url, 'http://www.codeschool.com'
 set :envy_url, 'http://madewithenvy.com'
 set :flickr_url, 'http://www.flickr.com/groups/designorlando'
 set :meetup_url, 'http://www.meetup.com/Design-Orlando'
-set :twitter_url, 'http://twitter.com/designorlando'
+set :twitter_url, 'http://twitter.com/designorlandofl'
 
 helpers do
   def get_meetup_link(id)
