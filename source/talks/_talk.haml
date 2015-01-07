@@ -1,7 +1,9 @@
+- talk_link =  talk.meetup ? get_meetup_link(talk.link) : talk.link
+
 - if talk.next
 
   %h3.h1.twl
-    = link_to talk.title, get_meetup_link(talk.link)
+    = link_to talk.title, talk_link
     %span.tcs ##{ talk.number }
 
   %p.mbm
