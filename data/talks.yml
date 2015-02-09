@@ -1,6 +1,9 @@
 - number: 29
   date: '02/10/15'
-  unfilled: true
+  meetup: true
+  next: true
+  link: '220413342'
+  title: 'Show and Tell'
 
 - number: 28
   date: '01/13/15'
