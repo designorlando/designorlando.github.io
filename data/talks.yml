@@ -1,6 +1,11 @@
 - number: 30
   date: '03/10/15'
-  unfilled: true
+  next: true
+  meetup: true
+  link: '220876638'
+  title: 'Responsive Typography'
+  speaker: 'John D. Jameson'
+  speaker_link: 'http://twitter.com/johndjameson'
 
 - number: 29
   date: '02/10/15'
