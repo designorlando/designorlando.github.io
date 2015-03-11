@@ -2,26 +2,27 @@
 
 - if talk.next
 
-  %h3.h1.twl
-    = link_to talk.title, talk_link
-    %span.tcs ##{ talk.number }
+  - if talk.unfilled
 
-  %ul.list.list--inline.list--inline--xs.list--separated
+    .tac
+      %p.mtm.tcs.tsi The next talk has not been scheduled, which means it could be you!
+      = link_to 'Request to Speak!', '#', class: 'btn btn--s'
 
-    - if talk.speaker
+  - else
+
+    %h3.h1.twl
+      = link_to talk.title, talk_link
+      %span.tcs ##{ talk.number }
+
+    %ul.list.list--inline.list--inline--xs.list--separated
+
+      - if talk.speaker
+
+        %li.list-item
+          %strong= link_to talk.speaker, talk.speaker_link
 
       %li.list-item
-        %strong= link_to talk.speaker, talk.speaker_link
+        %strong= talk.date
 
-    %li.list-item
-      %strong= talk.date
-
-    %li.list-item
-      %strong 7:00pm
-
-- elsif talk.unfilled
-
-  .tac
-    %p.mtm.tcs.tsi The next talk has not been scheduled, which means it could be you!
-    = link_to 'Request to Speak!', '#', class: 'btn btn--s'
-
+      %li.list-item
+        %strong 7:00pm
