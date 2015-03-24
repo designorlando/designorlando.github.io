@@ -1,7 +1,11 @@
 - number: 31
   date: '04/14/15'
   next: true
-  unfilled: true
+  meetup: true
+  link: '221255268'
+  title: 'The Science of Font Selection'
+  speaker: 'Drew Powers'
+  speaker_link: 'http://twitter.com/an_ennui'
 
 - number: 30
   date: '03/10/15'
