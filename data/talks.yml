@@ -1,7 +1,10 @@
 - number: 34
   date: '07/14/15'
   next: true
-  unfilled: true
+  title: 'Design Discussion with Ann Grafelman'
+  meetup: true
+  link: '223627745'
+  speaker_link: 'https://twitter.com/agrafelman'
 
 - number: 33
   date: '06/09/15'
