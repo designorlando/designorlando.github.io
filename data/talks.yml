@@ -1,10 +1,15 @@
+- number: 35
+  date: '08/04/15'
+  title: 'Design Sprint 1 of 3'
+  next: true
+  meetup: true
+  link: '224067421'
+
 - number: 34
   date: '07/14/15'
-  next: true
-  title: 'Design Discussion with Ann Grafelman'
+  title: 'Discussion about changes to Design Orlando'
   meetup: true
   link: '223627745'
-  speaker_link: 'https://twitter.com/agrafelman'
 
 - number: 33
   date: '06/09/15'
