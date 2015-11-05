@@ -1,7 +1,13 @@
 - number: 36
+  date: '11/10/15'
+  title: 'Design Sprint 2 (1 of 3)'
+  next: true
+  meetup: true
+  link: '226042022'
+
+- number: 36
   date: '10/13/15'
   title: 'Design Sprint 3 of 3'
-  next: true
   meetup: true
   link: '225713732'
 
